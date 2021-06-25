@@ -37,31 +37,55 @@ const crazySum = function(a, b) {
 }
  let crazySumResult =crazySum(1, 2)
  console.log(crazySumResult)
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
 
-
-
 const crazyDiff = function(input) {
+    if (input > 19) {
+        return input * 3 
+    }
     return input - 19;
+   
 }
 
-crazySum(20)
+console.log(crazyDiff(20))
 
-crazySum(2)
+console.log(crazyDiff(10))
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
-/* WRITE YOUR CODE HERE */
+const boundary = function(n) {
+    if (n >= 20 && n <= 100) {
+    return true;
+    }
+    else if (n === 400) {
+        return true;
+    }
+    else if (n > 100)
+    return false;
+}  
+
+let boundaryResult = boundary(840)
+console.log(boundaryResult)
+
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+var string = "Paul"
+var stringCheck = string.substring(0, 5);
+
+const strivify = function(Paul) {
+    if (stringCheck === "Strive")
+    return strivify 
+
+    /* unsure how to proceed */
 
 /* WRITE YOUR CODE HERE */
 
