@@ -78,39 +78,71 @@ console.log(boundaryResult)
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
-var string = "Paul"
-var stringCheck = string.substring(0, 5);
 
-const strivify = function(Paul) {
-    if (stringCheck === "Strive")
-    return strivify 
+function strivify(string) {
+    if (string.startsWith("Strive")) {
+        return string;
+    } else {
+        return "Strive" + string;
+    }
+}
 
-    /* unsure how to proceed */
+//const strivify = (string) => (string.startsWith("Strive") ? string : "Strive" + string);  
+console.log(strivify(" is great"));
+    
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+function check3and7(posNum) {
+    if (posNum % 3 === 0 || posNum % 7 === 0) {
+        return "posNum is multiple of 3 or 7";
+    } else {
+        return "posNum is neither multiple of 3 nor 7";
+    }
+}
+
+console.log(check3and7(4));
+
+//I need help understanding the maths behind this, unsure how using a remainder can be used to check this but I understand the code
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+function reverseString(str) {
+    var splitString = str.split("");  //turns string into an array
+    var reverseArray = splitString.reverse(); //reverses the contents of the array
+    var joinArray = reverseArray.join(""); // joins together the contents of the array
+
+    return joinArray;  //returns input entered in reverseString("") in reverse
+}
+    console.log(reverseString("Helloooo"));
+
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
+
+function upperFirst(str) {
+    var initialCap = 
+}
+
 
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+
+const cutString = function(string) {
+    return string.substring(1, -1); 
+}
+
+console.log(cutString)
 
 /* WRITE YOUR CODE HERE */
 
