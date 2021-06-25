@@ -128,21 +128,19 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 */
 
 function upperFirst(str) {
-    var initialCap = 
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
-
-/* WRITE YOUR CODE HERE */
+console.log(upperFirst("funtimes"))
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
 const cutString = function(string) {
-    return string.substring(1, -1); 
+    return string.substring(1, 5); 
 }
 
-console.log(cutString)
+console.log(cutString("String"))
 
 /* WRITE YOUR CODE HERE */
 
