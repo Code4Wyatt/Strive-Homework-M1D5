@@ -142,13 +142,17 @@ const cutString = function(string) {
 
 console.log(cutString("String"))
 
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
+function giveMeRandom(n) {
+    if (n => 0 && =< 10) { 
+        return Array.from(n)
+}
+
+console.log(giveMeRandom(6));
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
