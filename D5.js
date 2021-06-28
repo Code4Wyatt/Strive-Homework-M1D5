@@ -52,7 +52,9 @@ var me = {name:"Paul", surname:"Murray", age:30}
 */
 
 var skills = ["BeginnerJavaScript", "HTML", "CSS"];
-    skills.slice(0, 1)
+    skills.slice(0, 1);
+
+
 
 
 /* Ex.G 
@@ -112,7 +114,7 @@ function deleteOne(str, trueFalse) {
         return str.substring(1, str.length);
     } else if (trueFalse === true) {
         return str.substring(0, str.length - 1);
-    };
+    }
 }
 
 console.log(deleteOne("MyString", true));
@@ -143,7 +145,7 @@ function isThisAnEmail(str) {
    }
 
    console.log(isThisAnEmail("pm1@outlook.com"));
-   console.log(isThisAnEmail("pm1@.outlook.com"));  
+   console.log(isThisAnEmail("pm1@.outlook.com")); 
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
@@ -168,9 +170,15 @@ function isThisAnEmail(str) {
     }
 */
 
-function rollTheDices(n) {
+const rollTheDices = (numReceived) => {
+  for (let i = 0; i < numReceived; i++){
+      let rollOfDiceResult = dice()
+      let values = []
+      values.push(rollOfDiceResult)
+      console.log(values)
 
-}
+  } 
+  }
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
