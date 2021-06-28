@@ -84,7 +84,7 @@ function whoIsBigger(numOne, numTwo) {
     }
     return
 }
-whoIsBigger(5, 10);
+whoIsBigger(5, 10); 
 
 
 
@@ -106,18 +106,55 @@ console.log(splitMe("I love coding"));
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
 
+function deleteOne(str, trueFalse) {
+    if (trueFalse === false) {
+        return str.substring(1, str.length);
+    } else if (trueFalse === true) {
+        return str.substring(0, str.length - 1);
+    };
+}
+
+console.log(deleteOne("MyString", true));
+
 /* Ex.5
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
 
+function onlyLetters(str) {
+    var withNoNumbers = str.replace(/[0-9]/g, '');
+    return withNoNumbers
+}
+
+console.log(onlyLetters("124124 String without numbers 129417"));
+
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+function isThisAnEmail(str) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(str))
+     {
+       return (true)
+     }
+       console.log("You have entered an invalid email address!")
+       return (false)
+   }
+
+   console.log(isThisAnEmail("pm1@outlook.com"));
+   console.log(isThisAnEmail("pm1@.outlook.com"));  
+
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+function whatDayIsIt(str) {
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var d = Date("3rd October 2020");
+var dayName = days[d.getDay()];
+}
+console.log(dayName);
+
+
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
