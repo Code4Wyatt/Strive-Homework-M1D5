@@ -147,14 +147,14 @@ function isThisAnEmail(str) {
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
-function whatDayIsIt(str) {
-var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var d = Date("3rd October 2020");
-var dayName = days[d.getDay()];
-}
-console.log(dayName);
+//function whatDayIsIt(str) {
+//var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//var d = Date("3rd October 2020");
+//var dayName = days[d.getDay()];
+//console.log(whatDayIsIt("3rd October 2020"));
 
 
+// coming back to this, unsure
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
@@ -167,13 +167,38 @@ console.log(dayName);
     }
 */
 
+function rollTheDices(n) {
+
+}
+
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
+
+    function howManyDays(){
+        var today = new Date(14/10/2020);
+        var whatDay = new Date(today.getDate());
+        return howManyDays;
+    }
+
+    console.log(howManyDays())
+
+
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+
+function isTodayMyBirthday(date) {
+    var date = "";
+    if (date === "03/10/1990") {
+        return "It's your birthday!";
+    } else if {
+        return "Its someone elses birthday";
+    }
+}
+
+console.log(isTodayMyBirthday("03/10/1990"));
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
