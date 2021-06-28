@@ -37,14 +37,14 @@ console.log(random);
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
 
-const me = {name:"Paul", surname:"Murray", age:30}
+var me = {name:"Paul", surname:"Murray", age:30}
+    delete me.age;
+    console.log(me);
 
-    console.log(me)
-
-
-/* Ex.E 
+/* Ex.E
     Programmatically remove the age property from the previously create object.
 */
+
 
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
