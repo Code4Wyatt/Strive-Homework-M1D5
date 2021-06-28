@@ -39,6 +39,7 @@ console.log(random);
 
 var me = {name:"Paul", surname:"Murray", age:30}
     delete me.age;
+    
     console.log(me);
 
 /* Ex.E
@@ -50,6 +51,9 @@ var me = {name:"Paul", surname:"Murray", age:30}
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
 
+var skills = ["BeginnerJavaScript", "HTML", "CSS"];
+
+
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
@@ -59,14 +63,44 @@ var me = {name:"Paul", surname:"Murray", age:30}
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
 */
 
+function dice(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  }
+  
+  var myRandom = dice(1, 6);
+  
+  console.log(myRandom);
+
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
+
+function whoIsBigger(numOne, numTwo) {
+    if (numOne > numTwo) {
+        console.log("The first inputted number is the largest.")
+    }
+    else {
+        console.log("The second inputted number is the largest")
+    }
+    return
+}
+whoIsBigger(5, 10);
+
+
 
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
+
+function splitMe(text){
+    let x = text.replace(/[^A-Za-z0-9]+/g, " ");
+    let newArr = x.trim().split(" ");
+    return newArr;
+}
+
+console.log(splitMe("I love coding"));
+
 
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
