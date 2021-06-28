@@ -52,6 +52,7 @@ var me = {name:"Paul", surname:"Murray", age:30}
 */
 
 var skills = ["BeginnerJavaScript", "HTML", "CSS"];
+    skills.slice(0, 1)
 
 
 /* Ex.G 
